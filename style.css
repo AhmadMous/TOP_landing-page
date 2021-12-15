@@ -1,7 +1,17 @@
+body{
+    display: flex;
+    flex-flow: column wrap;
+}
 .hero{
     background-color: #1F2937;
 }
+
+.hero img{
+    width: 100px;
+    height: auto;
+}
 .footer{
+    margin-top: auto;
     color: blue;
     background-color: #1F2937;
 }
