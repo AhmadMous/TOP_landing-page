@@ -3,34 +3,33 @@ body{
     margin: 0;
 }
 
-.leftaside, .rightaside{
-    width: 30%;
-    height: 100%;
-    flex-shrink: 100;
-    border: red solid 1px;
-}
 .hero{
-    background-color: #1F2937;
+    max-width: 1300px;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    padding: 0.75em;
+    padding-bottom: 4em;
+    gap: 3rem;
 }
 
-.heros >* {
-    border: blue solid 1px;
+.herocontainer{
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
 }
+
 
 .navlist{
     display: flex;
 }
 
 .navlist > li{
-    margin: 0.75em;
+    margin-left: 0.75em;
 }
 
 .navlist img{
     width: 80px;
-    margin: 0.75em;
 }
 .navlist :nth-child(2){
     margin-left: auto;
@@ -38,20 +37,36 @@ body{
 
 .hother{
     display: flex;
-    gap: 16px;
-    min-width: 500px;
-    align-self: center;
+    justify-content: center;
+    gap: 1rem;
 }
+
+
 .mainimg{
+    object-fit: cover;
+    flex: 1;
+    width: 48%;
+    min-width: 450px;
     border-radius: 6px;
-    width: 50%;
     height: auto;}
 
+@media all and (max-width: 800px) {
+    .mainimg{order: 1;
+    flex: 1;}
+    .left{order: 2;
+    flex: 1;
+    }
+    .hother{flex-wrap: wrap;
+    }
+    .one{text-align:center;}
+    .three{align-self: center;}
+}
+
 .left{
-    width: 50%;
+    width: 45%;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
 }
 .one{
     font-size: 48px;
@@ -62,9 +77,9 @@ body{
     color: #E5E7EB;
 }
 
-.three{
+.three, .ctabutton{
   background: #3882F6;
-  border: 1px solid royalblue;
+  border: white;
   color: white;
   width: 200px;
   padding: 16px 8px;
@@ -124,7 +139,6 @@ ul{
 }
 
 .lmiddle{
-    border: #3882F6 solid 1px;
     background-color: #E5E7EB;
     display: flex;
     padding: 3rem;
@@ -133,14 +147,64 @@ ul{
     align-items: center;
 }
 
-.text{
+.qtcontainer{
     max-width: 1000px;
+    background-color: #E5E7EB;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.text{
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
 }
-.footer{
+.bywho{
+    text-align: right;
+    align-self: flex-end;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #1F2937;
+}
+.cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.ctacontainer{
+    background-color: #3882F6;
+    padding: 3rem 5rem;
+    border-radius: 8px;
+    display: flex;
+    color: white;
+    gap: 5rem;
+}
+.ctaleft{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+.ctatitle{
+    font-size: 24px;
+}
+
+.ctatext{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.ctabutton{
+    justify-self: center;
+    align-self: center;
+    border: white 1px solid;
+}
+
+footer{
+    color: white;
+    border: #3882F6;
     margin-top: auto;
-    color: blue;
     background-color: #1F2937;
+    text-align: center;
 }
