@@ -50,7 +50,7 @@ body{
     border-radius: 6px;
     height: auto;}
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 700px) {
     .mainimg{order: 1;
     flex: 1;}
     .left{order: 2;
@@ -202,6 +202,7 @@ ul{
 }
 
 footer{
+    padding: 2rem 0px;
     color: white;
     border: #3882F6;
     margin-top: auto;
