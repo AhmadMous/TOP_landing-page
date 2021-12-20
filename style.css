@@ -2,34 +2,45 @@ body{
     font-family: Roboto, sans-serif;
     margin: 0;
 }
+
+.leftaside, .rightaside{
+    width: 30%;
+    height: 100%;
+    flex-shrink: 100;
+    border: red solid 1px;
+}
 .hero{
     background-color: #1F2937;
     display: flex;
-    gap: 32px;
-    flex-flow: column;
-    padding: 32px 300px;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.heros >* {
+    border: blue solid 1px;
 }
 
 .navlist{
     display: flex;
-    gap: 16px;
+}
 
+.navlist > li{
+    margin: 0.75em;
 }
 
 .navlist img{
     width: 80px;
+    margin: 0.75em;
 }
-
-.otherlinks{
+.navlist :nth-child(2){
     margin-left: auto;
-    display: flex;
-    gap: 16px;
-    justify-items: center;
 }
 
-.other{
+.hother{
     display: flex;
     gap: 16px;
+    min-width: 500px;
+    align-self: center;
 }
 .mainimg{
     border-radius: 6px;
@@ -112,6 +123,22 @@ ul{
     text-decoration: none;
 }
 
+.lmiddle{
+    border: #3882F6 solid 1px;
+    background-color: #E5E7EB;
+    display: flex;
+    padding: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    max-width: 1000px;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
 .footer{
     margin-top: auto;
     color: blue;
