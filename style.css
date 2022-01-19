@@ -71,7 +71,6 @@ body{
 
 .left :nth-child(3){
     align-self: flex-start;
-    border: solid red;
 }
 
 .one{
